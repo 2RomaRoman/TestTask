@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2f94893b-2354-408b-b96d-13144471366f" name="Changes" comment="Go">
-      <change afterPath="$PROJECT_DIR$/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/book.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/API_Tests/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/API_Tests/ApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/API_Tests/Enums.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/API_Tests/Enums.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,26 +69,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mrsil/IdeaProjects/TestTask/src/test/java/api_tests&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/mrsil/IdeaProjects/TestTask/src/test/java/api_tests",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
-}</component>
+}]]></component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="--add-modules java.xml.bind" />
       <command value="gradle test" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.TestTask [test]">
-    <configuration name="ApiTest.deleteWith_Wrong_id" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="JUnit.ApiTest">
+    <configuration name="ApiTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -97,7 +101,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;API_Tests.ApiTest.deleteWith_Wrong_id&quot;" />
+            <option value="&quot;API_Tests.ApiTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -107,7 +111,7 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="ApiTest.postWithoutName (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ApiTest.postNull" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -120,31 +124,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;API_Tests.ApiTest.postWithoutName&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="ApiTest.postWithoutName" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":gradle" />
-            <option value="test" />
-            <option value="--tests" />
-            <option value="&quot;API_Tests.ApiTest.postWithoutName&quot;" />
+            <option value="&quot;API_Tests.ApiTest.postNull&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -175,40 +155,68 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="TestTask [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="test" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
+    <configuration name="ApiTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestTask.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="API_Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="API_Tests" />
+      <option name="MAIN_CLASS_NAME" value="API_Tests.ApiTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest.getByWrongId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestTask.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="API_Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="API_Tests" />
+      <option name="MAIN_CLASS_NAME" value="API_Tests.ApiTest" />
+      <option name="METHOD_NAME" value="getByWrongId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ApiTest.getEverything" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TestTask.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="API_Tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="API_Tests" />
+      <option name="MAIN_CLASS_NAME" value="API_Tests.ApiTest" />
+      <option name="METHOD_NAME" value="getEverything" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
       <item itemvalue="Gradle.TestTask [:ApiTests]" />
-      <item itemvalue="Gradle.TestTask [test]" />
-      <item itemvalue="Gradle.ApiTest.postWithoutName (1)" />
-      <item itemvalue="Gradle.ApiTest.deleteWith_Wrong_id" />
-      <item itemvalue="Gradle.ApiTest.postWithoutName" />
+      <item itemvalue="Gradle.ApiTest" />
+      <item itemvalue="Gradle.ApiTest.postNull" />
+      <item itemvalue="JUnit.ApiTest" />
+      <item itemvalue="JUnit.ApiTest.getByWrongId" />
+      <item itemvalue="JUnit.ApiTest.getEverything" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TestTask [test]" />
-        <item itemvalue="Gradle.ApiTest.postWithoutName" />
-        <item itemvalue="Gradle.ApiTest.postWithoutName (1)" />
-        <item itemvalue="Gradle.ApiTest.deleteWith_Wrong_id" />
+        <item itemvalue="JUnit.ApiTest" />
+        <item itemvalue="Gradle.ApiTest" />
+        <item itemvalue="JUnit.ApiTest.getByWrongId" />
+        <item itemvalue="JUnit.ApiTest.getEverything" />
+        <item itemvalue="Gradle.ApiTest.postNull" />
       </list>
     </recent_temporary>
   </component>
@@ -228,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677635237745</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Go">
+      <created>1677640384088</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677640384088</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

@@ -4,7 +4,7 @@ public enum Enums {
 
     BASEURL("http://localhost:5000/api/books"),
 
-    BOOKID("/11"),
+    BOOKID("/3"),
     IDFORDELETE("/5"),
     BOOKWRONGID("/972fh26");
 

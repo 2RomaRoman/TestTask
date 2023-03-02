@@ -3,6 +3,9 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
+
+import java.io.File;
+
 import static org.hamcrest.Matchers.equalTo;
 import static API_Tests.Enums.*;
 import static io.restassured.RestAssured.given;
@@ -79,26 +82,20 @@ public class ApiTest {
     void postEverything() {
         System.out.println("***************POSITIVE*********************");
         System.out.println("***ADD_NEW_BOOK_WITH_FULL_INFO***");
-        String book = "{\n" +
-                " \"author\": \"Джон Стейнбек\",\n" +
-                " \"isElectronicBook\": true,\n" +
-                " \"name\": \"Гроздья Гнева\",\n" +
-                " \"year\": 1939\n" +
-                "}";
-
+        File jData = new File("src/test/resources/book.json");
         given().baseUri(BASEURL.baseURL)
                 .contentType(ContentType.JSON)
-                .body(book)
+                .body(jData)
                 .log().all()
                 .when()
                 .post()
                 .then().assertThat()
                 .statusCode(201)
-                .body("book.author", equalTo("Джон Стейнбек"))
+                .body("book.author", equalTo("New author"))
                 .body("book.id", Matchers.notNullValue())
-                .body("book.isElectronicBook", equalTo(true))
-                .body("book.name", equalTo("Гроздья Гнева"))
-                .body("book.year", equalTo(1939))
+                .body("book.isElectronicBook", equalTo(false))
+                .body("book.name", equalTo("New book"))
+                .body("book.year", equalTo(2023))
                 .log().all();
 
     }
@@ -151,26 +148,21 @@ public class ApiTest {
     void putNewInfo() {
         System.out.println("***************POSITIVE*********************");
         System.out.println("***ADD_NEW_INFO_BY_ID***");
-        String book = "{\n" +
-                " \"author\": \"Джон Стейнбек\",\n" +
-                " \"isElectronicBook\": true,\n" +
-                " \"name\": \"Гроздья Гнева\",\n" +
-                " \"year\": 1939\n" +
-                "}";
+        File jData = new File("src/test/resources/book.json");
 
         given().baseUri(BASEURL.baseURL)
                 .contentType(ContentType.JSON)
-                .body(book)
+                .body(jData)
                 .log().all()
                 .when()
                 .put(BOOKID.getURL())
                 .then().assertThat()
                 .statusCode(200)
-                .body("book.author", equalTo("Джон Стейнбек"))
+                .body("book.author", equalTo("New author"))
                 .body("book.id", Matchers.notNullValue())
-                .body("book.isElectronicBook", equalTo(true))
-                .body("book.name", equalTo("Гроздья Гнева"))
-                .body("book.year", equalTo(1939))
+                .body("book.isElectronicBook", equalTo(false))
+                .body("book.name", equalTo("New book"))
+                .body("book.year", equalTo(2023))
                 .log().all();
     }
     @Test
